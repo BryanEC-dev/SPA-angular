@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home/home.component';
 import { AboutComponent } from './components/about/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { ResultadoBusquedaHeroeComponent } from './components/resultado-busqueda-heroe/resultado-busqueda-heroe.component';
 /* import { PageNotFoundComponent } from './'; */
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'heroe/:id', component: HeroeComponent },
+    { path: 'resultado-heroes/:nombre', component: ResultadoBusquedaHeroeComponent },
     { path: '**', component: HomeComponent }, // si no encuentras la ruta ve a esta
 
     //{ path: 'path/:routeParam', component: MyComponent },
